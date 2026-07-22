@@ -9,7 +9,7 @@ const About = () => {
           data-aos="fade-up"
           data-aos-duration="800"
         >
-          <p>Get To Know More</p>
+          <p>Get To Know More?</p>
           <h2>About Me</h2>
         </div>
 
