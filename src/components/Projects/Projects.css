@@ -1,0 +1,266 @@
+.projects {
+  min-height: 100vh;
+  padding: 70px 50px 70px;
+  background: #081426;
+  color: #ffffff;
+}
+
+.projects-container {
+  width: 100%;
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+.projects-heading {
+  max-width: 700px;
+  margin: 0 auto 55px;
+  text-align: center;
+}
+
+.projects-heading h2 {
+  margin: 8px 0 12px;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.projects-heading > p:last-child {
+  color: #cbd5e1;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.project-card {
+  position: relative;
+  overflow: hidden;
+  padding: 32px;
+  border: 1px solid rgba(56, 189, 248, 0.14);
+  border-radius: 16px;
+  background: #0c1b2e;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.22);
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-7px);
+  border-color: rgba(56, 189, 248, 0.55);
+}
+
+.project-number {
+  display: inline-block;
+  margin-bottom: 22px;
+  color: #38bdf8;
+  font-size: 2.8rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.project-card h3 {
+  margin-bottom: 14px;
+  font-size: 24px;
+}
+
+.project-description {
+  min-height: 78px;
+  margin-bottom: 20px;
+  color: #cbd5e1;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.project-technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 25px;
+}
+
+.project-technologies span,
+.modal-technologies span {
+  padding: 7px 11px;
+  border: 1px solid rgba(56, 189, 248, 0.25);
+  border-radius: 20px;
+  background: rgba(56, 189, 248, 0.08);
+  color: #7dd3fc;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.view-details-button {
+  width: 100%;
+  padding: 13px;
+  border: none;
+  border-radius: 9px;
+  background: #38bdf8;
+  color: #04111f;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease;
+}
+
+.view-details-button:hover {
+  background: #7dd3fc;
+  transform: translateY(-2px);
+}
+
+/* Modal */
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+  background: rgba(0, 0, 0, 0.78);
+  backdrop-filter: blur(6px);
+}
+
+.project-modal {
+  position: relative;
+  width: 100%;
+  max-width: 650px;
+  max-height: 88vh;
+  overflow-y: auto;
+  padding: 40px;
+  border: 1px solid rgba(56, 189, 248, 0.25);
+  border-radius: 18px;
+  background: #0c1b2e;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.45);
+}
+
+.modal-close-button {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  border: none;
+  background: transparent;
+  color: #ffffff;
+  font-size: 34px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.modal-close-button:hover {
+  color: #38bdf8;
+}
+
+.modal-project-number {
+  display: inline-block;
+  margin-bottom: 12px;
+  color: #38bdf8;
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.project-modal > h2 {
+  margin-bottom: 16px;
+  padding-right: 40px;
+  font-size: 32px;
+}
+
+.modal-description {
+  margin-bottom: 28px;
+  color: #cbd5e1;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.modal-section {
+  margin-bottom: 27px;
+}
+
+.modal-section h3 {
+  margin-bottom: 14px;
+  font-size: 20px;
+}
+
+.modal-section ul {
+  margin: 0;
+  padding-left: 22px;
+}
+
+.modal-section li {
+  margin-bottom: 9px;
+  color: #cbd5e1;
+  line-height: 1.5;
+}
+
+.modal-technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.modal-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+.modal-link {
+  display: inline-block;
+  padding: 12px 22px;
+  border-radius: 9px;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.primary-link {
+  background: #38bdf8;
+  color: #04111f;
+}
+
+.secondary-link {
+  border: 1px solid #38bdf8;
+  color: #38bdf8;
+}
+
+@media screen and (max-width: 900px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .projects {
+    padding: 95px 18px 50px;
+  }
+
+  .projects-heading {
+    text-align: left;
+  }
+
+  .projects-heading h2 {
+    font-size: 32px;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-description {
+    min-height: auto;
+  }
+
+  .project-modal {
+    padding: 32px 22px;
+  }
+
+  .project-modal > h2 {
+    font-size: 26px;
+  }
+}

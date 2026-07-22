@@ -1,0 +1,237 @@
+.training {
+  width: 100%;
+  padding: 55px 50px 70px;
+  background: #071321;
+  color: #ffffff;
+}
+
+.training-container {
+  width: 100%;
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+.training-heading {
+  max-width: 720px;
+  margin: 0 auto 48px;
+  text-align: center;
+}
+
+.training-subtitle {
+  margin-bottom: 7px;
+  color: #38bdf8;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.training-heading h2 {
+  margin-bottom: 12px;
+  font-size: 40px;
+  line-height: 1.2;
+}
+
+.training-heading > p:last-child {
+  color: #cbd5e1;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.training-card {
+  overflow: hidden;
+  border: 1px solid rgba(56, 189, 248, 0.2);
+  border-top: 3px solid #38bdf8;
+  border-radius: 17px;
+  background: #0c1b2e;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.24);
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.training-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(56, 189, 248, 0.5);
+  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.3);
+}
+
+.training-card-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 30px 35px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.training-icon {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 62px;
+  height: 62px;
+  border-radius: 14px;
+  background: rgba(56, 189, 248, 0.12);
+  color: #38bdf8;
+  font-size: 29px;
+}
+
+.training-title {
+  flex: 1;
+}
+
+.training-type {
+  display: inline-block;
+  margin-bottom: 7px;
+  color: #38bdf8;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+}
+
+.training-title h3 {
+  margin: 0;
+  color: #ffffff;
+  font-size: 27px;
+}
+
+.training-duration {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 14px;
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  border-radius: 20px;
+  background: rgba(56, 189, 248, 0.08);
+  color: #7dd3fc;
+  font-size: 13px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.training-content {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 50px;
+  padding: 35px;
+}
+
+.training-content h4 {
+  margin-bottom: 18px;
+  color: #ffffff;
+  font-size: 21px;
+  padding-left: 90px;
+}
+
+.training-description p {
+  margin-bottom: 15px;
+  color: #a8bbd1;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.learning-list {
+  display: grid;
+  gap: 14px;
+  padding-left: 90px;
+}
+
+.learning-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 11px;
+  color: #cbd5e1;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.learning-item svg {
+  flex-shrink: 0;
+  margin-top: 3px;
+  color: #38bdf8;
+  font-size: 16px;
+}
+
+.training-technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 11px;
+  padding: 0 35px 35px;
+}
+
+.training-technologies span {
+  padding: 7px 13px;
+  border: 1px solid rgba(56, 189, 248, 0.24);
+  border-radius: 18px;
+  background: rgba(56, 189, 248, 0.08);
+  color: #7dd3fc;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 850px) {
+  .training-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .training {
+    padding: 45px 18px 55px;
+  }
+
+  .training-heading {
+    margin-bottom: 38px;
+    text-align: left;
+  }
+
+  .training-heading h2 {
+    font-size: 32px;
+  }
+
+  .training-heading > p:last-child {
+    font-size: 15px;
+  }
+
+  .training-card-header {
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 24px 22px;
+  }
+
+  .training-icon {
+    width: 52px;
+    height: 52px;
+    font-size: 24px;
+  }
+
+  .training-title {
+    flex: 1;
+    min-width: 180px;
+  }
+
+  .training-title h3 {
+    font-size: 22px;
+  }
+
+  .training-duration {
+    margin-left: 72px;
+  }
+
+  .training-content {
+    padding: 26px 22px;
+  }
+
+  .training-technologies {
+    padding: 0 22px 27px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .training-duration {
+    width: fit-content;
+    margin-left: 0;
+  }
+}
