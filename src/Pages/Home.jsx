@@ -1,16 +1,19 @@
-import Navbar from "../components/Navbar/Navbar.jsx";
-import Hero from "../components/Hero/Hero.jsx";
-import About from "../components/About/About.jsx";
-import Education from "../components/Education/Education.jsx";
-import Training from "../components/Training/Training.jsx";
-import Skills from "../components/Skills/Skills.jsx";
-import Projects from "../components/Projects/Projects.jsx";
-import Certificate from "../components/Certificate/Certificate.jsx";
-import Contact from "../components/Contact/Contact.jsx";
-import Footer from "../components/Footer/Footer.jsx";
+import Navbar from "../components/Navbar/Navbar";
+import Hero from "../components/Hero/Hero";
+import About from "../components/About/About";
+import Education from "../components/Education/Education";
+import Training from "../components/Training/Training";
+import Skills from "../components/Skills/Skills";
+import Projects from "../components/Projects/Projects";
+import Certificates from "../components/Certificate/Certificate";
+import Contact from "../components/Contact/Contact";
+import Footer from "../components/Footer/Footer";
+import ScrollProgress from "../components/ScrollProgress/ScrollProgress";
+
 const Home = () => {
   return (
     <>
+      <ScrollProgress />
       <Navbar />
 
       <main>
@@ -20,12 +23,13 @@ const Home = () => {
         <Training />
         <Skills />
         <Projects />
-        <Certificate />
+        <Certificates />
         <Contact />
-        <Footer />
       </main>
+
+      <Footer />
     </>
   );
 };
 
-export default Home;``
+export default Home;

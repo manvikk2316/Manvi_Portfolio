@@ -81,7 +81,11 @@ const Contact = () => {
   return (
     <section className="contact" id="contact">
       <div className="contact-container">
-        <div className="contact-heading">
+        <div
+          className="contact-heading"
+          data-aos="fade-up"
+          data-aos-duration="800"
+        >
           <p className="section-subtitle">Get In Touch</p>
 
           <h2>Contact Me</h2>
@@ -93,28 +97,45 @@ const Contact = () => {
         </div>
 
         <div className="contact-content">
-          <div className="contact-info">
-            <h3>Let's Talk</h3>
+          <div
+            className="contact-info"
+            data-aos="fade-right"
+            data-aos-duration="900"
+            data-aos-delay="100"
+          >
+            <h3>Let&apos;s Talk</h3>
 
-            <div className="contact-info-item">
+            <div
+              className="contact-info-item"
+              data-aos="fade-up"
+              data-aos-delay="180"
+            >
               <FaEnvelope className="contact-icon" />
 
               <div>
                 <h4>Email</h4>
-                <p>kmanvii2316@gmail.com</p>
+                <p>kmanvii238@gmail.com</p>
               </div>
             </div>
 
-            <div className="contact-info-item">
+            <div
+              className="contact-info-item"
+              data-aos="fade-up"
+              data-aos-delay="260"
+            >
               <FaPhoneAlt className="contact-icon" />
 
               <div>
                 <h4>Phone</h4>
-                <p>+91-9548745213</p>
+                <p>+91-9548792973</p>
               </div>
             </div>
 
-            <div className="contact-info-item">
+            <div
+              className="contact-info-item"
+              data-aos="fade-up"
+              data-aos-delay="340"
+            >
               <FaMapMarkerAlt className="contact-icon" />
 
               <div>
@@ -124,7 +145,13 @@ const Contact = () => {
             </div>
           </div>
 
-          <form className="contact-form" onSubmit={handleSubmit}>
+          <form
+            className="contact-form"
+            onSubmit={handleSubmit}
+            data-aos="fade-left"
+            data-aos-duration="900"
+            data-aos-delay="180"
+          >
             <div className="form-group">
               <label htmlFor="name">Name</label>
 
